@@ -34,7 +34,9 @@ class ArrayList {
   }
 
   pop() {
+    let popped = this.array[this.size -1];
     this.counter = 0;
+
     this.size = this.size - 1;
     let newArray = new Array(this.size);
 
@@ -43,7 +45,7 @@ class ArrayList {
     }
 
     this.array = newArray;
-    return this.array;
+    return popped;
   }
 }
 
@@ -53,8 +55,8 @@ for (let i = 0; i < 3; i++) {
   list.add(i);
 }
 
-list.pop();
-list.pop();
-list.pop();
+console.log(list.pop());
+console.log(list.pop());
+console.log(list.pop());
 
 console.log('test ', list)
