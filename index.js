@@ -55,7 +55,7 @@ for (let i = 0; i < 3; i++) {
   list.add(i);
 }
 
-console.log(list.pop());
+
 console.log(list.pop());
 console.log(list.pop());
 
